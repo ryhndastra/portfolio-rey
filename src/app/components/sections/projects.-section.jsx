@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Pratama Memories",
     description:
-      "A memory site for Group 4 of Ospek Pratama 2025 — with photos, messages, quizzes, and a mentor letter.",
+      "A memory site for Group 3 of Ospek Pratama 2025 — with photos, messages, quizzes, and a mentor letter.",
     image: "/images/projects/pratama.png",
     tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/ryhndastra/pratama-memories.git",
@@ -44,9 +44,8 @@ export default function ProjectsSection({ isVisible }) {
     <section id="projects" className="px-4 py-20 bg-white lg:px-8 lg:pl-24">
       <div className="max-w-6xl mx-auto">
         <div
-          className={`text-center mb-16 ${
-            isVisible ? "animate-fade-in-up" : "opacity-0"
-          }`}
+          className={`text-center mb-16 ${isVisible ? "animate-fade-in-up" : "opacity-0"
+            }`}
         >
           <h2 className="mb-4 text-4xl font-bold text-gray-900 lg:text-5xl">
             Featured Projects
