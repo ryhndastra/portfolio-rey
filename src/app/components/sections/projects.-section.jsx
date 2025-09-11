@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Pratama Memories",
     description:
-      "A memory site for Group 3 of Ospek Pratama 2025 — with photos, messages, quizzes, and a mentor letter.",
+      "A memory site for Group 3 of Pratama 2025 — with photos, messages, quizzes, and a mentor letter.",
     image: "/images/projects/pratama.png",
     tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/ryhndastra/pratama-memories.git",
