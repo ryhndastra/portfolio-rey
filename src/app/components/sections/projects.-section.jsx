@@ -26,16 +26,16 @@ const projects = [
     image: "/images/projects/villanakey.png",
     tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/ryhndastra/villanakey-web.git",
-    color: "from-orange-500 to-red-600",
+    color: "from-pink-500 to-violer-600",
   },
   {
-    title: "Pratama Memories",
+    title: "Garuda Private Server Website",
     description:
-      "A memory site for Group 3 of Pratama 2025 — with photos, messages, quizzes, and a mentor letter.",
-    image: "/images/projects/pratama.png",
+      "A responsive website built with Next.js and Tailwind CSS for promoting a private server. Features include smooth navigation, modern UI, and mobile-friendly layout. And you can also access this website by visiting garudaps.com",
+    image: "/images/projects/garudaps.jpeg",
     tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/ryhndastra/pratama-memories.git",
-    color: "from-pink-500 to-violet-600",
+    github: "https://github.com/ryhndastra/garudaps.git",
+    color: "from-orange-500 to-yellow-600",
   },
 ];
 
