@@ -35,7 +35,7 @@ const projects = [
     image: "/images/projects/garudaps.jpeg",
     tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/ryhndastra/garudaps.git",
-    color: "from-orange-500 to-yellow-600",
+    color: "from-yellow-500 to-orange-600",
   },
 ];
 
