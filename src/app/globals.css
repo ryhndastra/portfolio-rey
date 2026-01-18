@@ -307,3 +307,57 @@
 .delay-1000 {
   animation-delay: 1s;
 }
+
+/* --- ANIMATIONS FOR HERO SECTION --- */
+
+/* Animasi Warp Keluar (Zoom In parah) */
+@keyframes warp-out {
+  0% { transform: scale(1); opacity: 1; filter: blur(0); }
+  50% { transform: scale(4); opacity: 0.5; filter: blur(4px); }
+  100% { transform: scale(20); opacity: 0; filter: blur(10px); }
+}
+
+.animate-warp-out {
+  animation: warp-out 1s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
+
+/* Animasi Background pas Warp */
+@keyframes hyper-speed {
+  0% { transform: scale(1); }
+  100% { transform: scale(4); }
+}
+
+.animate-hyper-speed {
+  animation: hyper-speed 0.5s linear infinite;
+}
+
+/* Animasi Floating Organic */
+@keyframes float-custom {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.animate-float-fast {
+  animation: float-custom 3s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-custom 4s ease-in-out infinite 1s;
+}
+
+.animate-float-slow {
+  animation: float-custom 5s ease-in-out infinite 0.5s;
+}
+
+/* Utility biar animasi stop pas di-hover */
+.hover\:pause:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide-scan {
+                0% { transform: translateX(-100%); }
+                100% { transform: translateX(200%); }
+            }
+            .animate-slide-scan {
+                animation: slide-scan 2s linear infinite;
+            }

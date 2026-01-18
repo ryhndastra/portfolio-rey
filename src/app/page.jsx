@@ -7,7 +7,6 @@ import ContactSection from "@/app/components/sections/contact-section";
 import HeroSection from "@/app/components/sections/hero-section";
 import ProjectsSection from "@/app/components/sections/projects.-section";
 import SkillsSection from "@/app/components/sections/skills-section";
-import BackgroundParticles from "@/app/components/ui/background-particles";
 import { useEffect, useState } from "react";
 
 export default function Portfolio() {
@@ -61,7 +60,6 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-gray-50">
-      <BackgroundParticles />
       <Navigation
         activeSection={activeSection}
         scrollToSection={scrollToSection}

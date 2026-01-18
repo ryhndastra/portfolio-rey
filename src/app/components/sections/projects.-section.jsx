@@ -1,62 +1,83 @@
+"use client";
+
 import ProjectCard from "@/app/components/ui/project-card";
+import { FolderGit2 } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description:
-      "A simple e-commerce app built with Laravel and Tailwind CSS. Includes authentication, product management, and checkout functionality.",
+    id: "01",
+    title: "BANDUNG_MERCH",
+    subtitle: "E-Commerce Ecosystem",
+    description: "A comprehensive marketplace solution featuring vendor management, secure payment processing via Midtrans, and real-time inventory tracking.",
     image: "/images/projects/bandung_merch.png",
-    tech: ["Laravel", "MySQL", "Tailwind CSS"],
+    tech: ["Laravel", "MySQL", "Tailwind"],
     github: "https://github.com/ryhndastra/bandungmerch-store.git",
-    color: "from-blue-500 to-purple-600",
+    status: "PROTOTYPE",
+    year: "2024"
   },
   {
-    title: "Villa Booking App",
-    description:
-      "A mobile app built with Flutter and Firebase for villa reservation. Includes calendar booking, payment integration, and user login.",
+    id: "02",
+    title: "VILLA_NA_KEY",
+    subtitle: "Reservation Mobile App",
+    description: "Cross-platform mobile application designed for seamless property booking. Integrates cloud-based calendar sync and push notifications.",
     image: "/images/projects/villa.png",
-    tech: ["Flutter", "Dart", "Firebase", "Firestore"],
+    tech: ["Flutter", "Dart", "Firebase"],
     github: "https://github.com/ryhndastra/villaNaKey.git",
-    color: "from-green-500 to-teal-600",
+    status: "PROTOTYPE",
+    year: "2024"
   },
   {
-    title: "Villa Na Key Website",
-    description:
-      "CA responsive website built with Next.js and Tailwind CSS for promoting a tropical villa. Features include smooth navigation, modern UI, and mobile-friendly layout.",
+    id: "03",
+    title: "VILLA_NA_KEY_WEB",
+    subtitle: "Marketing Frontend",
+    description: "High-performance landing page optimized for conversion. Features smooth scroll animations and responsive gallery layouts.",
     image: "/images/projects/villanakey.png",
-    tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+    tech: ["Next.js", "React", "Framer Motion"],
     github: "https://github.com/ryhndastra/villanakey-web.git",
-    color: "from-pink-500 to-violer-600",
+    status: "LIVE",
+    year: "2025"
   },
   {
-    title: "Garuda Private Server Website",
-    description:
-      "A responsive website built with Next.js and Tailwind CSS for promoting a private server. Features include smooth navigation, modern UI, and mobile-friendly layout. And you can also access this website by visiting garudaps.com",
+    id: "04",
+    title: "GARUDA_PS_WEB",
+    subtitle: "Gaming Community Hub",
+    description: "Centralized dashboard for game server players. Provides account management, server status monitoring, and news aggregation.",
     image: "/images/projects/garudaps.jpeg",
-    tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+    tech: ["Next.js", "Tailwind", "React Query"],
     github: "https://github.com/ryhndastra/garudaps.git",
-    color: "from-yellow-500 to-orange-600",
+    status: "LIVE",
+    year: "2025"
   },
 ];
 
 export default function ProjectsSection({ isVisible }) {
   return (
-    <section id="projects" className="px-4 py-20 bg-white lg:px-8 lg:pl-24">
-      <div className="max-w-6xl mx-auto">
-        <div
-          className={`text-center mb-16 ${isVisible ? "animate-fade-in-up" : "opacity-0"
-            }`}
-        >
-          <h2 className="mb-4 text-4xl font-bold text-gray-900 lg:text-5xl">
-            Featured Projects
-          </h2>
-          <div className="w-20 h-1 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 animate-pulse"></div>
-          <p className="text-xl text-gray-600">
-            Some of my recent work that I'm proud of
+    <section id="projects" className="relative px-4 py-24 bg-[#050505] font-mono selection:bg-green-500 selection:text-black overflow-hidden">
+      
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.1)_50%)] bg-[length:100%_3px] mix-blend-screen pointer-events-none" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:50px_50px] opacity-40"></div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
+        
+        {/* HEADER */}
+        <div className={`text-center mb-24 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+          <div className="inline-flex items-center justify-center gap-3 mb-4">
+            <FolderGit2 className="w-8 h-8 text-green-500 animate-pulse" />
+            <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-widest drop-shadow-[0_0_10px_rgba(34,197,94,0.5)]">
+              PROJECT_ARCHIVE
+            </h2>
+          </div>
+          {/* Animated Bar */}
+          <div className="w-24 h-1 mx-auto mb-6 bg-green-900/50 relative overflow-hidden">
+             <div className="absolute inset-0 bg-green-500 w-1/2 animate-slide-scan"></div>
+          </div>
+          <p className="text-gray-400 text-sm md:text-lg tracking-wide font-mono">
+            {">"} Accessing secure database...
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        {/* PROJECTS LIST  */}
+        <div className="flex flex-col gap-16">
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
