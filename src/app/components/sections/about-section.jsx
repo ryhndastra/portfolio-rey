@@ -15,7 +15,7 @@ const FACTS = [
   "STATUS: Ready to Learn", 
   "HOBBY: Gaming & Coding",
   "EXP: Building Projects", 
-  "STYLE: Pixel Perfect"
+  "STYLE: Depends on Mood",
 ];
 
 export default function AboutSection({ isVisible }) {
@@ -184,7 +184,7 @@ export default function AboutSection({ isVisible }) {
                    </h3>
                    <div className="text-gray-400 leading-relaxed space-y-4 border-l-2 border-green-900 pl-4">
                       <p>
-                        <span className="text-green-500 font-bold">{">>"}</span> Hello! I'm <strong className="text-white">Reyhand Astra</strong>, a Fullstack Engineer passionate about turning logic into pixel-perfect reality.
+                        <span className="text-green-500 font-bold">{">>"}</span> Hello! I'm <strong className="text-white">Reyhand Astra</strong>, a Fullstack Developer passionate about turning logic into perfect reality.
                       </p>
                       <p>
                         <span className="text-green-500 font-bold">{">>"}</span> Currently focusing on the <span className="text-white">Next.js Ecosystem</span> and <span className="text-white">Flutter</span>. I may be new to the industry, but my dedication to <strong>Clean Architecture</strong> is senior-level.
