@@ -96,6 +96,12 @@ export default function HeroSection({ isVisible, scrollToSection }) {
     { name: "Flutter", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg", anim: "animate-float-medium" },
   ];
 
+  const socialLinks = [
+  { Icon: Github, href: "https://github.com/ryhndastra" },
+  { Icon: Linkedin, href: "https://linkedin.com/in/reyhand-astra-377264356/" },
+  { Icon: Instagram, href: "https://instagram.com/ryhndastra" },
+];
+
   return (
     <section id="home" className="relative flex items-center justify-center min-h-screen px-4 overflow-hidden bg-[#050505] font-mono selection:bg-green-500 selection:text-black">
       
@@ -210,9 +216,9 @@ export default function HeroSection({ isVisible, scrollToSection }) {
               <div className="flex items-center justify-center lg:justify-start gap-4">
                  <div className="h-[2px] w-8 bg-gray-800 hidden lg:block"></div>
                  <div className="flex gap-3">
-                    {[Github, Linkedin, Instagram].map((Icon, i) => (
-                      <a key={i} href="#" className="w-12 h-12 flex items-center justify-center border-2 border-gray-700 text-gray-400 hover:border-white hover:text-white hover:bg-gray-900 transition-all hover:-translate-y-1">
-                        <Icon className="w-5 h-5" />
+                    {socialLinks.map((link, i) => (
+                      <a key={i} href={link.href} className="w-12 h-12 flex items-center justify-center border-2 border-gray-700 text-gray-400 hover:border-white hover:text-white hover:bg-gray-900 transition-all hover:-translate-y-1">
+                        <link.Icon className="w-5 h-5" />
                       </a>
                     ))}
                  </div>
