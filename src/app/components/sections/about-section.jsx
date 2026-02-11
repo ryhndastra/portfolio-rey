@@ -8,7 +8,7 @@ const GRID_SIZE = 20;
 const SPEED = 120; 
 
 const FACTS = [
-  "ROLE: Fullstack Engineer",
+  "ROLE: Web Developer",
   "STACK: React, Next.js, Laravel",
   "FOCUS: Clean Architecture",
   "MOBILE: Flutter Developer",

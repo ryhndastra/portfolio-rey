@@ -9,13 +9,13 @@ export default function ContactSection({ isVisible }) {
       id="contact"
       className="relative px-4 py-24 bg-[#050505] font-mono selection:bg-green-500 selection:text-black overflow-hidden"
     >
-        {/* --- BACKGROUND FX --- */}
+        {/* BACKGROUND FX */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.1)_50%)] bg-[length:100%_3px] mix-blend-screen pointer-events-none" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a1a_1px,transparent_1px),linear-gradient(to_bottom,#1a1a1a_1px,transparent_1px)] bg-[size:50px_50px] opacity-40"></div>
 
         <div className="max-w-4xl mx-auto relative z-10">
             
-            {/* --- 1. SECTION HEADER  --- */}
+            {/* SECTION HEADER */}
             <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
                 <div className="inline-flex items-center justify-center gap-3 mb-4">
                     <Signal className="w-8 h-8 text-green-500 animate-pulse" />
@@ -33,7 +33,7 @@ export default function ContactSection({ isVisible }) {
             </div>
 
 
-            {/* --- 2. MAIN TERMINAL BOX --- */}
+            {/* MAIN TERMINAL BOX */}
             <div className={`transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"}`}>
                 <div className="bg-[#0a0a0a] border-4 border-white p-8 md:p-12 shadow-[12px_12px_0px_0px_#22c55e] relative">
                     

@@ -172,7 +172,7 @@ export default function HeroSection({ isVisible, scrollToSection }) {
               </h1>
               <div className="flex items-center justify-center lg:justify-start gap-3 pt-4">
                  <div className="h-[2px] w-12 bg-green-500"></div>
-                 <p className="text-xl font-bold text-gray-300 tracking-wide">FULLSTACK <span className="bg-white text-black px-1">DEVELOPER</span></p>
+                 <p className="text-xl font-bold text-gray-300 tracking-wide">WEB <span className="bg-white text-black px-1">DEVELOPER</span></p>
               </div>
             </div>
 

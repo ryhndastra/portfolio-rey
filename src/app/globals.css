@@ -110,6 +110,14 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@keyframes slide-scan {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(200%); }
+        }
+        .animate-slide-scan {
+            animation: slide-scan 2s linear infinite;
+        }
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -310,7 +318,7 @@
 
 /* --- ANIMATIONS FOR HERO SECTION --- */
 
-/* Animasi Warp Keluar (Zoom In parah) */
+/* Animasi Warp Keluar  */
 @keyframes warp-out {
   0% { transform: scale(1); opacity: 1; filter: blur(0); }
   50% { transform: scale(4); opacity: 0.5; filter: blur(4px); }
@@ -349,7 +357,6 @@
   animation: float-custom 5s ease-in-out infinite 0.5s;
 }
 
-/* Utility biar animasi stop pas di-hover */
 .hover\:pause:hover {
   animation-play-state: paused;
 }

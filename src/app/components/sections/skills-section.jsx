@@ -38,15 +38,6 @@ export default function SkillsSection({ isVisible }) {
 
       </div>
 
-      <style jsx>{`
-        @keyframes slide-scan {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(200%); }
-        }
-        .animate-slide-scan {
-            animation: slide-scan 2s linear infinite;
-        }
-      `}</style>
     </section>
   );
 }

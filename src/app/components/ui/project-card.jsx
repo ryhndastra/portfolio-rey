@@ -14,7 +14,7 @@ export default function ProjectCard({ project, index, isVisible }) {
       style={{ transitionDelay: `${index * 150}ms` }}
     >
       
-      {/* 1. IMAGE AREA */}
+      {/* IMAGE AREA */}
       <div className="w-full lg:w-[45%] relative border-b-4 lg:border-b-0 lg:border-r-4 border-[#333] group-hover:border-green-500 transition-colors min-h-[250px] overflow-hidden bg-[#111]">
         
         {/* Pixel Image Effect */}
