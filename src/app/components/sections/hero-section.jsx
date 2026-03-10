@@ -32,7 +32,7 @@ export default function HeroSection({ isVisible, scrollToSection }) {
 
   // --- LOGIC AUDIO PLAYER ---
   useEffect(() => {
-    audioBgmRef.current = new Audio("/audio/bgm.mp3");
+    audioBgmRef.current = new Audio("/audio/SECRET OF WAHOHO_2.mp3");
     audioBgmRef.current.loop = true;
     audioBgmRef.current.volume = 0.3;
 
