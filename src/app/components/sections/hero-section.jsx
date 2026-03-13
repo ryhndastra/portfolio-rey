@@ -30,11 +30,27 @@ export default function HeroSection({ isVisible, scrollToSection }) {
     return () => clearInterval(interval);
   }, []);
 
-  // --- LOGIC AUDIO PLAYER ---
   useEffect(() => {
-    audioBgmRef.current = new Audio("/audio/SECRET OF WAHOHO_2.mp3");
-    audioBgmRef.current.loop = true;
-    audioBgmRef.current.volume = 0.3;
+    const bgmTracks = ["/audio/SECRET OF WAHOHO_2.mp3", "/audio/release.mp3"];
+
+    const shuffled = [...bgmTracks].sort(() => Math.random() - 0.5);
+    let currentIndex = 0;
+
+    const playTrack = (index) => {
+      if (audioBgmRef.current) {
+        audioBgmRef.current.pause();
+      }
+      audioBgmRef.current = new Audio(shuffled[index]);
+      audioBgmRef.current.volume = 0.3;
+      audioBgmRef.current.play().catch(() => {});
+
+      audioBgmRef.current.addEventListener("ended", () => {
+        currentIndex = (currentIndex + 1) % shuffled.length;
+        playTrack(currentIndex);
+      });
+    };
+
+    playTrack(currentIndex);
 
     audioSfxRef.current = new Audio("/audio/start.wav");
     audioSfxRef.current.volume = 0.5;
