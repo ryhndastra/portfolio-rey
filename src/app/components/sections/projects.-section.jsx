@@ -9,7 +9,7 @@ const projects = [
     title: "BANDUNG_MERCH",
     subtitle: "E-Commerce Ecosystem",
     description:
-      "A comprehensive marketplace solution featuring vendor management, secure payment processing via Midtrans, and real-time inventory tracking.",
+      "A comprehensive marketplace solution featuring vendor management.",
     image: "/images/projects/bandung_merch.png",
     tech: ["Laravel", "MySQL", "Tailwind"],
     github: "https://github.com/ryhndastra/bandungmerch-store.git",
