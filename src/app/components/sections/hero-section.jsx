@@ -143,7 +143,7 @@ export default function HeroSection({ isVisible, scrollToSection }) {
     { Icon: Github, href: "https://github.com/ryhndastra" },
     {
       Icon: Linkedin,
-      href: "https://linkedin.com/in/reyhand-astra-377264356/",
+      href: "https://linkedin.com/in/reyhand-astra",
     },
     { Icon: Instagram, href: "https://instagram.com/ryhndastra" },
   ];
