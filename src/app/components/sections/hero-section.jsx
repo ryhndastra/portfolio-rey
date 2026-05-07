@@ -254,7 +254,7 @@ export default function HeroSection({ isVisible, scrollToSection }) {
               <div className="flex items-center justify-center lg:justify-start gap-3 pt-4">
                 <div className="h-[2px] w-12 bg-green-500"></div>
                 <p className="text-xl font-bold text-gray-300 tracking-wide">
-                  WEB{" "}
+                  WEB & MOBILE{" "}
                   <span className="bg-white text-black px-1">DEVELOPER</span>
                 </p>
               </div>
@@ -276,9 +276,16 @@ export default function HeroSection({ isVisible, scrollToSection }) {
                     {`> Initiating connection...`} <br />
                     {`> Success!`}
                   </p>
-                  <p className="text-gray-400 italic">
+                  <p className="text-gray-400 italic mb-4">
                     // "Code is like humor. When you have to explain it, it’s
                     bad."
+                  </p>
+                  <p className="text-green-400 mb-4">
+                    {`> curl https://reyhand-astra.vercel.app/`}
+                  </p>
+                  <p className="text-gray-400 italic">
+                    // "try to copy the command, and run it on ur terminal. I
+                    double dare you"
                   </p>
                 </div>
               </div>
