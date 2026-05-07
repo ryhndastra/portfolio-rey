@@ -31,7 +31,7 @@ ${reset}
 ${magenta}mobile dev${reset}  //  ${gray}sometimes the code works${reset}  //  ${gray}mostly it doesn't${reset}
 
 ${green}┌──────────────────────────────────────────────────────────────┐
-│                          about_me                           │
+│                          about_me                            │
 └──────────────────────────────────────────────────────────────┘${reset}
 
   ${white}Hey... I'm ryhndastra.${reset}
