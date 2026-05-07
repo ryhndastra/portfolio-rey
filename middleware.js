@@ -28,7 +28,7 @@ ${orange}
  ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝
 ${reset}
 
-${magenta}frontend dev${reset}  //  ${gray}sometimes the code works${reset}  //  ${gray}mostly it doesn't${reset}
+${magenta}mobile dev${reset}  //  ${gray}sometimes the code works${reset}  //  ${gray}mostly it doesn't${reset}
 
 ${green}┌──────────────────────────────────────────────────────────────┐
 │                          about_me                           │
