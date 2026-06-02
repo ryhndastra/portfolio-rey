@@ -28,19 +28,20 @@ const projects = [
     status: "PROTOTYPE",
     year: "2024",
   },
-  // {
-  //   id: "03",
-  //   title: "VILLA_NA_KEY_WEB",
-  //   subtitle: "Marketing Frontend",
-  //   description: "High-performance landing page optimized for conversion. Features smooth scroll animations and responsive gallery layouts.",
-  //   image: "/images/projects/villanakey.png",
-  //   tech: ["Next.js", "React", "Framer Motion"],
-  //   github: "https://github.com/ryhndastra/villanakey-web.git",
-  //   status: "LIVE",
-  //   year: "2025"
-  // },
   {
     id: "03",
+    title: "KALORIN AI",
+    subtitle: "Nutrition tracker Web App",
+    description:
+      "Nutrition tracker web application for individuals to track their food intake and maintain a healthy lifestyle based on AI.",
+    image: "/images/projects/kalorinLogo.png",
+    tech: ["React", "Vite", "Express", "Supabase", "TensorFlow", "FASTAPI"],
+    github: "https://github.com/ryhndastra/kalorin-ai.git",
+    status: "LIVE",
+    year: "2026",
+  },
+  {
+    id: "04",
     title: "GARUDA_PS_WEB",
     subtitle: "Gaming Community Hub",
     description:
